@@ -49,5 +49,5 @@ import searching_module as sm
 import data_constants as dc
 
 query = 'forretningsgang'
-searcher_erm, results_erm = search_over_index(query_text=query, INDEX_DIR=dc.INDEX_DIR)
+searcher_erm, results_erm = sm.search_over_index(query_text=query, INDEX_DIR=dc.INDEX_DIR)
 ```
