@@ -9,6 +9,7 @@
 # Initial setup
 
 You will need to run some files to create the data files you will need. You must place the structured txt files into the `data` folder. The files should have the following names: `Forretningsgang_Struktured_Text.txt` and `Produkter_Struktured_Text.txt`.
+
 First you need to clean the data and extract the information from the structured txt files into csvs. This can be done by running the following scripts:
 
 ```shell
