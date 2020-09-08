@@ -1,5 +1,7 @@
 # Installation
 
+You will need to install anaconda: https://docs.anaconda.com/anaconda/install/
+
 ```shell
 > conda create -n ENV_NAME python=3.7 pip
 > conda activate ENV_NAME
