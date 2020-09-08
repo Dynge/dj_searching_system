@@ -9,14 +9,29 @@
 # Initial setup
 
 You will need to run some files to create the data files you will need.
-The data you need is index' for the documents, a fasttext model and a normalization factor for the words in the vocabulary based on the similarity measure.
+First you need to clean the data and extract the information from the structured txt files into csvs. This can be done by running the following scripts:
+
+```shell
+> python Data_Cleaning.py
+> python preprocessing.py
+```
+
+Note: The preprocessing takes a long time to finish, however remember this is a one time procedure.
+
+Following this you will need to index the data such that it can be searched over, create a fasttext and a normalization factor for the words in the vocabulary based on the similarity measure.
 
 These can be create by running the following files:
 
 ```shell
-> python whoosh_indexing
-> python fasttext_training
-> python precompute_p_vocabulary
+> python whoosh_indexing.py
+> python fasttext_training.py
+> python precompute_p_vocabulary.py
+```
+
+That is it. You can use the interface.py file to run the prototype.
+
+```shell
+> python interface.py
 ```
 
 # Workflow
